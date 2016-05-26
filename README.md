@@ -116,8 +116,8 @@ verifying the installation
 Open Python 2 IDLE on RasPi
 Type the following lines in the python shell:
 
-	>>>import cv2
-	>>>print cv2.__version__
+	>>> import cv2
+	>>> print cv2.__version__
 
 the following line should appear then:
 
