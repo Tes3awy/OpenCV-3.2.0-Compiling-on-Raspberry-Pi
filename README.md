@@ -122,5 +122,6 @@ Type the following lines in the python shell:
 the following line should appear then:
 
 	'3.0.0'
-# 									Done
+#Done
 
+# # Watch to get updates. I will be posting how to connect Raspberry Pi to PC with Ethernet Cable (no internet needed)
