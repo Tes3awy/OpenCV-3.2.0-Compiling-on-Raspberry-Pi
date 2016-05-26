@@ -124,4 +124,4 @@ the following line should appear then:
 	'3.0.0'
 #Done
 
-# # Watch to get updates. I will be posting how to connect Raspberry Pi to PC with Ethernet Cable (no internet needed)
+# Watch this repo to get updates. I will be posting how to connect Raspberry Pi to PC with ETHERNET CABLE (no internet needed)
