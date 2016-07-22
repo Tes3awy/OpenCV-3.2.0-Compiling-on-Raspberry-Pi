@@ -5,6 +5,7 @@
 	$ sudo apt-get update
 	$ sudo apt-get upgrade
 	$ sudo rpi-update (can be skipped, but recommended)
+	$ sudo reboot now
 
 # Step 2:
 
@@ -12,7 +13,7 @@
 
 # tep 3:
 
-	$ sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
+	$ sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
 
 # Step 4:
 
