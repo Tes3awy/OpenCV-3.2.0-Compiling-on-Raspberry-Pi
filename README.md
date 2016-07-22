@@ -73,7 +73,9 @@ preparing the build
 # Step 12:
 takes about 3.5 to 4 hours
 
-	$ make -j4 (I prefer -j3, because it doesn't use all the cores so it keeps the RasPi cool enough)
+	$ sudo make -j3 (I prefer -j3, because it doesn't use all the cores so it keeps the RasPi cool enough)
+	
+	If any errors occurs and the process fails to continue, execute $ sudo make clean
 
 # Step 13:
 installing the build prepared in step 11
