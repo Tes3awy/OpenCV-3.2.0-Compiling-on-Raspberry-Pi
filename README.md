@@ -11,7 +11,7 @@
 
 	$ sudo apt-get install build-essential cmake pkg-config
 
-# tep 3:
+# Step 3:
 
 	$ sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
 
