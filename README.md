@@ -46,13 +46,13 @@ install pip
 	$ pip install numpy
 
 # Step 10:
-download OpenCV 3.1.0 and unpack it
+Download OpenCV 3.0.0 and unpack it
 
 	$ cd ~
 	$ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.0.0.zip
 	$ unzip opencv.zip
 
-Contrib Libraries
+Contrib Libraries (Non-free Modules)
 
 	$ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.0.0.zip
 	$ unzip opencv_contrib.zip
