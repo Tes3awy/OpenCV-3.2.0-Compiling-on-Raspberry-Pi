@@ -4,7 +4,7 @@
 
 	$ sudo apt-get update
 	$ sudo apt-get upgrade
-	$ sudo rpi-update (can be skipped, but recommended) (don't do it if you are will use the RPI cam as recommended by official RPI Website)
+	$ sudo rpi-update (can be skipped, but recommended) (don't do it if you will use the RPI cam as recommended by official RPI Website)
 	$ sudo reboot now
 
 # Step 2:
