@@ -127,7 +127,7 @@ Type the following lines in the python shell:
 
 the following line should appear then:
 
-	'3.0.0'
+	'3.1.0'
 #Done
 
-# Watch this repo to get updates. I will be posting how to connect Raspberry Pi to PC with ETHERNET CABLE (no internet needed)
+# Watch and Fork this repo to get updates. I will be posting how to connect Raspberry Pi to PC with ETHERNET CABLE (no internet needed)
