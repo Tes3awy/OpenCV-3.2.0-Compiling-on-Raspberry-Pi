@@ -1,4 +1,4 @@
-# Compile OpenCV 3.0.0 + OpenCV Contrib for Python on Raspberry Pi 2B
+# Compile OpenCV 3.1.0 + OpenCV Contrib for Python on Raspberry Pi 2 Model B
 
 # Step 1:
 
@@ -13,15 +13,16 @@
 
 # Step 3:
 
-	$ sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
+	$ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
 
 # Step 4:
 
-	$ sudo apt-get install libgtk2.0-dev
+	$ sudo apt-get install libgtk2.0-dev libgstreamer0.10-0-dbg libgstreamer0.10-0 libgstreamer0.10-dev libv4l-0 libv4l-dev
 
 # Step 5:
 
 	$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+	$ sudo apt-get install libxvidcore-dev libx264-dev
 
 # Step 6:
 
@@ -43,31 +44,31 @@ install pip
 
 # Step 9:
 
-	$ pip install numpy
+	$ sudo pip install numpy
 
 # Step 10:
-Download OpenCV 3.0.0 and unpack it
+Download OpenCV 3.1.0 and unpack it
 
 	$ cd ~
-	$ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.0.0.zip
+	$ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
 	$ unzip opencv.zip
 
 Contrib Libraries (Non-free Modules)
 
-	$ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.0.0.zip
+	$ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.1.0.zip
 	$ unzip opencv_contrib.zip
 
 # Step 11:
 preparing the build
 
-	$ cd ~/opencv-3.0.0/
+	$ cd ~/opencv-3.1.0/
 	$ mkdir build
 	$ cd build
 	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D CMAKE_INSTALL_PREFIX=/usr/local \
-		-D INSTALL_C_EXAMPLES=ON \
+		-D INSTALL_C_EXAMPLES=OFF \
 		-D INSTALL_PYTHON_EXAMPLES=ON \
-		-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.0.0/modules \
+		-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.1.0/modules \
 		-D BUILD_EXAMPLES=ON ..
 
 # Step 12:
@@ -75,7 +76,7 @@ takes about 3.5 to 4 hours
 
 	$ sudo make -j3 (I prefer -j3, because it doesn't use all the cores so it keeps the RasPi cool enough)
 	
-	If any errors occurs and the process fails to continue, execute 
+	# If any errors occurs and the process fails to continue, execute 
 	
 	$ sudo make clean
 
