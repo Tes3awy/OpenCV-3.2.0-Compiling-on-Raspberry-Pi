@@ -1,10 +1,10 @@
-# Compile OpenCV 3.1.0 + OpenCV Contrib for Python on Raspberry Pi 2 Model B
+# Compile OpenCV 3.2.0 + OpenCV Contrib for Python on Raspberry Pi
 
 # Step 1:
 
 	$ sudo apt-get update
 	$ sudo apt-get upgrade
-	$ sudo rpi-update (can be skipped, but recommended) (don't do it if you will use the RPI cam as recommended by official RPI Website)
+	$ sudo rpi-update (can be skipped, but recommended) (don't do it if you will use the RPI cam as recommended by official 			  RPI Website)
 	$ sudo reboot now
 
 # Step 2:
@@ -47,29 +47,30 @@ install pip
 	$ sudo pip install numpy
 
 # Step 10:
-Download OpenCV 3.1.0 and unpack it
+Download OpenCV 3.2.0 and unpack it
 
 	$ cd ~
-	$ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
+	$ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.2.0.zip
 	$ unzip opencv.zip
 
 Contrib Libraries (Non-free Modules)
 
-	$ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.1.0.zip
+	$ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.2.0.zip
 	$ unzip opencv_contrib.zip
 
 # Step 11:
 preparing the build
 
-	$ cd ~/opencv-3.1.0/
+	$ cd ~/opencv-3.2.0/
 	$ mkdir build
 	$ cd build
 	$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D CMAKE_INSTALL_PREFIX=/usr/local \
 		-D INSTALL_C_EXAMPLES=OFF \
 		-D INSTALL_PYTHON_EXAMPLES=ON \
-		-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.1.0/modules \
-		-D BUILD_EXAMPLES=ON ..
+		-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.2.0/modules \
+		-D BUILD_EXAMPLES=ON \
+		-D ENABLE_NEON=ON ..
 
 # Step 12:
 takes about 3.5 to 4 hours
@@ -129,7 +130,7 @@ Type the following lines in the python shell:
 
 the following line should appear then:
 
-	'3.1.0'
+	'3.2.0'
 #Done
 
 # Watch and Fork this repo to get updates. I will be posting how to connect Raspberry Pi to PC with ETHERNET CABLE (no internet needed)
