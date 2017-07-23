@@ -1,10 +1,12 @@
 # Compile OpenCV 3.2.0 + OpenCV Contrib for Python on Raspberry Pi
 
+I assume you have downloaded Raspbian from here: https://www.raspberrypi.org/downloads/raspbian/ . Also I assume your RPi is functioning perfectly.
+
 # Step 1:
 
 	$ sudo apt-get update
 	$ sudo apt-get upgrade
-	$ sudo rpi-update (can be skipped, but recommended) (don't do it if you will use the RPI cam as recommended by official 			  RPI Website)
+	$ sudo rpi-update (can be skipped, but recommended) (don't do it if you will use the RPI cam as recommended by official RPI Website)
 	$ sudo reboot now
 
 # Step 2:
