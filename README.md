@@ -1,6 +1,8 @@
 # Compile OpenCV 3.2.0 + OpenCV Contrib for Python on Raspberry Pi
 
-I assume you have downloaded Raspbian from here: https://www.raspberrypi.org/downloads/raspbian/ . Also I assume your RPi is functioning perfectly.
+> I assume you have downloaded [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and installed it on your Pi. Also I assume your RPi is running and functioning perfectly.
+
+> Make sure you have extended your disk before performing any step from below.
 
 # Step 1:
 
@@ -135,4 +137,5 @@ the following line should appear then:
 	'3.2.0'
 #Done
 
-# Watch and Fork this repo to get updates. I will be posting how to connect Raspberry Pi to PC with ETHERNET CABLE (no internet needed)
+**TODO**
+- [ ] Connect to RPi without internet connection.
