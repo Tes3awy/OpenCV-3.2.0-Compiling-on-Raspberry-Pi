@@ -135,7 +135,7 @@ Type the following lines in the python shell:
 the following line should appear then:
 
 	'3.2.0'
-#Done
+## Done
 
 **TODO**
 - [ ] Connect to RPi without internet connection.
