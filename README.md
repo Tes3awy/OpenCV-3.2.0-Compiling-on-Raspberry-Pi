@@ -120,12 +120,12 @@ add the following lines at the bottom of bash.bashrc
 (leave a blank line at the end of bash.bashrc)
 save bash.bashrc changes (ctrl+o), then back at the command line (ctrl+x), 
 
-#Step 15:
+# Step 15:
 Reboot
 
 	$ sudo shutdown -r now
 
-#Step 16 Last Step:
+# Step 16 Last Step:
 verifying the installation
 
 Open Python 2 IDLE on RasPi
