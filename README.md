@@ -85,7 +85,9 @@ takes about 3.5 to 4 hours
 	
 	$ sudo make clean
 	
-	# Sometimes using multicores can cause problems, so if you face any problems just execute $ sudo make , but keep in mind that it will take much longer so be patient as much as you can and grab your cup of tea.
+	# Sometimes using multicores can cause problems, so if you face any problems just execute 
+	$ sudo make
+	# but keep in mind that it will take much longer so be patient as much as you can and grab your cup of tea or coffee :p.
 
 # Step 13:
 installing the build prepared in step 11
