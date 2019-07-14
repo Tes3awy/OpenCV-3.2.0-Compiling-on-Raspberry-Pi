@@ -4,6 +4,19 @@
 
 > Make sure you have extended your disk before performing any step from below.
 
+# Step 0:
+If you have problems related to low RAM you can follow these points, otherwise you can go to step 1.
+### Disable swap service
+	$ sudo dphys-swapfile swapoff
+### Edit the swap file 
+As root, edit the file /etc/dphys-swapfile and modify the variable CONF_SWAPSIZE (The size here is in MB):
+
+	$ CONF_SWAPSIZE = 2048
+	
+To modify the swap file, edit the variable CONF_SWAPFILE, and run dphys-swapfile setup which will create and initialize the file.
+### Restart the swap service
+	$ sudo dphys-swapfile swapon
+
 # Step 1:
 
 	$ sudo apt-get update
