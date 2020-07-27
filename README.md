@@ -1,6 +1,6 @@
 # Compile OpenCV 3.2.0 + OpenCV Contrib for Python on Raspberry Pi
 
-> I assume you have downloaded [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and installed it on your Pi. Also I assume your RPi is running and functioning perfectly.
+> I assume you have downloaded [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspbian/) and [installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) it on your RPi. I also assume your RPi is running and functioning perfectly.
 
 > Make sure you have extended your disk before performing any step from below.
 
@@ -92,7 +92,7 @@ preparing the build
 # Step 12:
 takes about 3.5 to 4 hours
 
-	$ sudo make -j3 (I prefer -j3, because it doesn't use all the cores so it keeps the RasPi cool enough)
+	$ sudo make -j3 (I prefer -j3, because it doesn't use all the cores so it keeps the RPi cool enough)
 	
 	# If any errors occurs and the process fails to continue, execute
 	
