@@ -1,10 +1,11 @@
 # Compile OpenCV 3.2.0 + OpenCV Contrib for Python on Raspberry Pi
 
-> I assume you have downloaded [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspbian/) and [installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) it on your RPi. I also assume your RPi is running and functioning perfectly.
+> I assume you have downloaded [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/) and [installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) it on your RPi. I also assume your RPi is running and functioning perfectly.
 
 > Make sure you have extended your disk before performing any step from below.
 
 # Step 0:
+
 If you have problems related to low RAM you can follow these points, otherwise you can go to step 1.
 ### Disable swap service
 	$ sudo dphys-swapfile swapoff
